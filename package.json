@@ -4,7 +4,8 @@
   "description": " trabajo de backend para el proyecto de la cafeteria Branch",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node src/index.js"
+    "start": "babel-node src/index.js",
+    "dev":"nodemon --exec babel-node src/index.js"
   },
   "keywords": [],
   "author": " Gonzalo Gallardo",
