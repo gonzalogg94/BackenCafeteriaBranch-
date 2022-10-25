@@ -2,6 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import cors from "cors"
 import path from "path";
+import "./database"
 
 // crear uns instacia e express
 const app = express();
@@ -27,6 +28,12 @@ app.use(express.static(path.join(__dirname,"../public")))
 
 // rutas: nombre de dominio + -----
 //  http://localhost:4000/
-app.get("/prueba",(req , res)=>{
+app.get("/productos",(req , res)=>{
+res.send("aqui tengo que retornar un arreglo e productos")
+})
+app.post("/prueba",(req , res)=>{
 res.send("Esto es una prueba de la peticion GET")
+})
+app.get("/productos2",(req , res)=>{
+res.send("aqui devolvemos un producto")
 })
