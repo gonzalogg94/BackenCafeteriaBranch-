@@ -3,6 +3,7 @@ import morgan from "morgan";
 import cors from "cors"
 import path from "path";
 import "./database"
+import productosRouter from "./routes/productos.routes";
 
 // crear uns instacia e express
 const app = express();
@@ -37,3 +38,5 @@ res.send("Esto es una prueba de la peticion GET")
 app.get("/productos2",(req , res)=>{
 res.send("aqui devolvemos un producto")
 })
+
+app.use("/apicafe",productosRouter)
