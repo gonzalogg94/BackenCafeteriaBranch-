@@ -27,6 +27,8 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname,"../public")))
 // console.log(path.join(__dirname,"../public"))
 
+
+
 // rutas: nombre de dominio + -----
 //  http://localhost:4000/
 app.get("/productos",(req , res)=>{
