@@ -35,7 +35,8 @@ if(value>=1&&value<=10000){
         .isIn(["bebida caliente","bebida fria","dulce","salado"])
         .withMessage("La categoria del producto debe ser correcta")
 
-    ],crearProducto)
+    ],
+    crearProducto);
     
 
     router.route("/productos/:id")
