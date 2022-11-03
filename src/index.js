@@ -8,6 +8,11 @@ import productosRouter from "./routes/productos.routes";
 // crear uns instacia e express
 const app = express();
 
+
+
+
+
+
 // creamos una variable
 app.set("port",process.env.PORT|| 4000);
 // usar el puerto
